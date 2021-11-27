@@ -4,8 +4,7 @@ from Ui_MainWindow import Ui_MainWindow
 
 
 class MainWindow:
-    def __init__(self):
-
+    def __init__(self):       
         self.main_win = QMainWindow()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self.main_win)
@@ -82,7 +81,6 @@ class MainWindow:
         new_val = round(eval(current_val),13)
         self.ui.display_lb.setText(str(new_val))
         
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
